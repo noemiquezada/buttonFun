@@ -17,6 +17,7 @@
 		4A80474F1E5162E700A6C22C /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80474E1E5162E700A6C22C /* UIColor+RandomColor.swift */; };
 		4A8047511E51657D00A6C22C /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8047501E51657D00A6C22C /* Block.swift */; };
 		4A8047541E5165FC00A6C22C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8047531E5165FC00A6C22C /* Constants.swift */; };
+		4AF92C3F1E524AB900519A13 /* BlockSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF92C3E1E524AB900519A13 /* BlockSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4A80474E1E5162E700A6C22C /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
 		4A8047501E51657D00A6C22C /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		4A8047531E5165FC00A6C22C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AF92C3E1E524AB900519A13 /* BlockSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				4A80474E1E5162E700A6C22C /* UIColor+RandomColor.swift */,
 				4A8047501E51657D00A6C22C /* Block.swift */,
 				4A8047531E5165FC00A6C22C /* Constants.swift */,
+				4AF92C3E1E524AB900519A13 /* BlockSource.swift */,
 			);
 			path = "Button Fun";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				4A80471E1E5143E700A6C22C /* ViewController.swift in Sources */,
 				4A8047511E51657D00A6C22C /* Block.swift in Sources */,
+				4AF92C3F1E524AB900519A13 /* BlockSource.swift in Sources */,
 				4A80474F1E5162E700A6C22C /* UIColor+RandomColor.swift in Sources */,
 				4A80471C1E5143E700A6C22C /* AppDelegate.swift in Sources */,
 				4A8047541E5165FC00A6C22C /* Constants.swift in Sources */,
@@ -526,6 +530,7 @@
 				4A8047421E5143E700A6C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A8047431E5143E700A6C22C /* Build configuration list for PBXNativeTarget "Button FunTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				4A8047451E5143E700A6C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A8047461E5143E700A6C22C /* Build configuration list for PBXNativeTarget "Button FunUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				4A8047481E5143E700A6C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
