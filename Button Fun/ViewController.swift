@@ -58,7 +58,7 @@ class ViewController: UIViewController {
             // Create Columns
             let stackView = UIStackView(arrangedSubviews: blocks)
             stackView.axis = .horizontal
-            stackView.distribution = .equalSpacing
+            stackView.distribution = .equalCentering
             stackView.alignment = .center
             stackView.spacing = 0
             
@@ -68,15 +68,13 @@ class ViewController: UIViewController {
         // Create Row
         let stackView = UIStackView(arrangedSubviews: columnStackViews)
         stackView.axis = .vertical
-        stackView.distribution = .equalSpacing
+        stackView.distribution = .equalCentering
         stackView.alignment = .center
         stackView.spacing = 0
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
         
         // Centered the Stack View and add height and width constraints
-        stackView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        stackView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
