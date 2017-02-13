@@ -16,23 +16,25 @@ class ViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-
+        
         // Compute grid constraints
         let width = view.frame.size.width
         let height = view.frame.size.height
         let columns = Int(width / Constants.BLOCK_WIDTH)
         let rows = Int(height / Constants.BLOCK_HEIGHT)
-        
+        createGrid(rows: rows, columns: columns)
+    }
+    
+    func createGrid(rows: Int, columns: Int){
         // Create Grid
         var columnStackViews = [UIStackView]()
         
         for _ in 0...rows-1 {
             var blocks = [Block]()
             for _ in 0...columns-1 {
-                // Create a view
-                let view = Block()
-            
-                blocks.append(view);
+                // Create a Block
+                let block = Block()
+                blocks.append(block);
             }
             
             // Create Columns
@@ -54,12 +56,9 @@ class ViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
         
-        // Add Constraints to the Stack View
-        let viewsDictionary = ["stackView":stackView]
-        let stackView_H = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[stackView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary)
-        let stackView_V = NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[stackView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary)
-        view.addConstraints(stackView_H)
-        view.addConstraints(stackView_V)
+        // Centered the Stack View
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
     }
 
