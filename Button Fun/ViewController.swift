@@ -12,17 +12,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func viewWillLayoutSubviews() {
-        
-        // Compute grid constraints
         let width = view.frame.size.width
         let height = view.frame.size.height
         let columns = Int(width / Constants.BLOCK_WIDTH)
         let rows = Int(height / Constants.BLOCK_HEIGHT)
         createGrid(rows: rows, columns: columns)
+    }
+    
+    override func viewDidLayoutSubviews() {
+
+    }
+    
+    override func viewWillLayoutSubviews() {
+        // Compute grid constraints
+
+        
     }
     
     func createGrid(rows: Int, columns: Int){
@@ -56,7 +60,9 @@ class ViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
         
-        // Centered the Stack View
+        // Centered the Stack View and add height and width constraints
+        stackView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        stackView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
