@@ -14,6 +14,10 @@
 		4A8047261E5143E700A6C22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8047241E5143E700A6C22C /* LaunchScreen.storyboard */; };
 		4A8047311E5143E700A6C22C /* Button_FunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8047301E5143E700A6C22C /* Button_FunTests.swift */; };
 		4A80473C1E5143E700A6C22C /* Button_FunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80473B1E5143E700A6C22C /* Button_FunUITests.swift */; };
+		4A80474F1E5162E700A6C22C /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80474E1E5162E700A6C22C /* UIColor+RandomColor.swift */; };
+		4A8047511E51657D00A6C22C /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8047501E51657D00A6C22C /* Block.swift */; };
+		4A8047541E5165FC00A6C22C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8047531E5165FC00A6C22C /* Constants.swift */; };
+		4AF92C3F1E524AB900519A13 /* BlockSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF92C3E1E524AB900519A13 /* BlockSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		4A8047371E5143E700A6C22C /* Button FunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Button FunUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A80473B1E5143E700A6C22C /* Button_FunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_FunUITests.swift; sourceTree = "<group>"; };
 		4A80473D1E5143E700A6C22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A80474E1E5162E700A6C22C /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
+		4A8047501E51657D00A6C22C /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		4A8047531E5165FC00A6C22C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AF92C3E1E524AB900519A13 /* BlockSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				4A8047221E5143E700A6C22C /* Assets.xcassets */,
 				4A8047241E5143E700A6C22C /* LaunchScreen.storyboard */,
 				4A8047271E5143E700A6C22C /* Info.plist */,
+				4A80474E1E5162E700A6C22C /* UIColor+RandomColor.swift */,
+				4A8047501E51657D00A6C22C /* Block.swift */,
+				4A8047531E5165FC00A6C22C /* Constants.swift */,
+				4AF92C3E1E524AB900519A13 /* BlockSource.swift */,
 			);
 			path = "Button Fun";
 			sourceTree = "<group>";
@@ -263,7 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A80471E1E5143E700A6C22C /* ViewController.swift in Sources */,
+				4A8047511E51657D00A6C22C /* Block.swift in Sources */,
+				4AF92C3F1E524AB900519A13 /* BlockSource.swift in Sources */,
+				4A80474F1E5162E700A6C22C /* UIColor+RandomColor.swift in Sources */,
 				4A80471C1E5143E700A6C22C /* AppDelegate.swift in Sources */,
+				4A8047541E5165FC00A6C22C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +530,7 @@
 				4A8047421E5143E700A6C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A8047431E5143E700A6C22C /* Build configuration list for PBXNativeTarget "Button FunTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +539,7 @@
 				4A8047451E5143E700A6C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A8047461E5143E700A6C22C /* Build configuration list for PBXNativeTarget "Button FunUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +548,7 @@
 				4A8047481E5143E700A6C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
