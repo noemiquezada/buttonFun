@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewDidLayoutSubviews() {
@@ -22,7 +21,6 @@ class ViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        
         // Remove a grid if it exists
         removeGrid();
         
@@ -36,6 +34,7 @@ class ViewController: UIViewController {
         createGrid(rows: rows, columns: columns)
         
     }
+
     
     func removeGrid() {
         for view in view.subviews {
@@ -44,6 +43,7 @@ class ViewController: UIViewController {
     }
     
     func createGrid(rows: Int, columns: Int){
+        
         // Create Grid
         var columnStackViews = [UIStackView]()
         
